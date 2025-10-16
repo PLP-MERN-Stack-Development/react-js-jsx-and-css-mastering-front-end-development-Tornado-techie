@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This is a modern React-based Task Manager application built with Vite and Tailwind CSS. It allows users to manage their tasks efficiently and features a theme switcher for toggling between light and dark modes.
+This is a modern React-based Task Manager application built with Vite and Tailwind CSS. It allows users to manage their tasks efficiently and features a theme switcher for toggling between light and dark modes. It shows my commitment to master MERN in my journey at PLP.
 
 ## Features
 
@@ -14,19 +14,24 @@ This is a modern React-based Task Manager application built with Vite and Tailwi
 
 ## Screenshots
 
-_(Add screenshots of your application here to showcase its features. For example:)
+_Screenshots of my application to showcase its features.
 
 ### Light Mode
-
-![Screenshot of Task Manager in Light Mode](placeholder_light_mode.png)
+![Screenshot of Task Manager in Light Mode](screenshots/homepage-lightmode.png)
 
 ### Dark Mode
+![Screenshot of Task Manager in Dark Mode](screenshots/homepage-darkmode.png)
 
-![Screenshot of Task Manager in Dark Mode](placeholder_dark_mode.png)
+### API page
+![Screenshot of Task Manager API model page](screenshots/api-lightmode.png)
+
+### Search effect in API page
+![Screenshot of Task Manager showing search effects in API page](screenshots/search-effect-api.png)
+
 
 ## Deployed Application
 
-🚀 Live Demo: [Deployed GitHub Pages URL Here](YOUR_GITHUB_PAGES_URL)
+🚀 Live Demo: [https://plp-mern-stack-development.github.io/react-js-jsx-and-css-mastering-front-end-development-Tornado-techie/](https://plp-mern-stack-development.github.io/react-js-jsx-and-css-mastering-front-end-development-Tornado-techie/)
 
 ## Technologies Used
 
@@ -34,7 +39,6 @@ _(Add screenshots of your application here to showcase its features. For example
 *   Vite.js
 *   Tailwind CSS (v4)
 *   React Router DOM
-*   (Add any other significant libraries or tools)
 
 ## Setup Instructions
 
@@ -99,3 +103,6 @@ yarn deploy
 ```
 
 Ensure your `package.json` has the `homepage` field correctly configured for GitHub Pages, and `gh-pages` is installed as a dev dependency.
+
+
+Salome Mundia
