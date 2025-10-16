@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.14",
+    "prop-types": "^15.8.1",
+    "react-router-dom": "^7.9.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.4",
+    "autoprefixer": "^10.4.21",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.14"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "homepage": "https://github.com/PLP-MERN-Stack-Development/react-js-jsx-and-css-mastering-front-end-development-Tornado-techie"
+}

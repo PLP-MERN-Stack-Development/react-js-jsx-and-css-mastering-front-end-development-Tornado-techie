@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Button from './Button';
+import { useTheme } from '../context/ThemeContext'; // Import useTheme
 
 /**
  * Custom hook for managing tasks with localStorage persistence
@@ -55,6 +56,7 @@ const TaskManager = () => {
   const { tasks, addTask, toggleTask, deleteTask } = useLocalStorageTasks();
   const [newTaskText, setNewTaskText] = useState('');
   const [filter, setFilter] = useState('all');
+  const { isDark } = useTheme(); // Destructure isDark from useTheme
 
   // Filter tasks based on selected filter
   const filteredTasks = tasks.filter((task) => {
@@ -71,19 +73,19 @@ const TaskManager = () => {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
-      <h2 className="text-2xl font-bold mb-6">Task Manager</h2>
+    <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6 text-gray-900 dark:text-gray-50">
+      <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-50">Task Manager</h2>
 
       {/* Task input form */}
       <form onSubmit={handleSubmit} className="mb-6">
         <div className="flex gap-2">
-          <input
-            type="text"
-            value={newTaskText}
-            onChange={(e) => setNewTaskText(e.target.value)}
-            placeholder="Add a new task..."
-            className="flex-grow px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600"
-          />
+        <input
+  type="text"
+  value={newTaskText}
+  onChange={(e) => setNewTaskText(e.target.value)}
+  placeholder="Add a new task..."
+  className="flex-grow px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-50 border-gray-300 dark:border-gray-600"
+/>
           <Button type="submit" variant="primary">
             Add Task
           </Button>
@@ -125,7 +127,7 @@ const TaskManager = () => {
           filteredTasks.map((task) => (
             <li
               key={task.id}
-              className="flex items-center justify-between p-3 border rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 dark:border-gray-700"
+              className="flex items-center justify-between p-3 border rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 dark:border-gray-700 border-gray-200"
             >
               <div className="flex items-center gap-3">
                 <input
@@ -136,7 +138,9 @@ const TaskManager = () => {
                 />
                 <span
                   className={`${
-                    task.completed ? 'line-through text-gray-500 dark:text-gray-400' : ''
+                    task.completed
+                      ? 'line-through text-gray-500 dark:text-gray-400'
+                      : 'text-gray-900 dark:text-gray-200' // Default text color for uncompleted tasks
                   }`}
                 >
                   {task.text}

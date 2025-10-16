@@ -1,70 +1,101 @@
-# React.js and Tailwind CSS Assignment
+# React Task Manager
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+## Project Description
 
-## Assignment Overview
+This is a modern React-based Task Manager application built with Vite and Tailwind CSS. It allows users to manage their tasks efficiently and features a theme switcher for toggling between light and dark modes.
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+## Features
 
-## Getting Started
+*   **Task Management:** Add, view, edit, and delete tasks.
+*   **Theme Switching:** Seamlessly switch between light and dark themes for a personalized user experience.
+*   **Responsive Design:** Optimized for various screen sizes.
+*   **API Integration:** (Optional - if applicable, otherwise remove) Demonstrates integration with a placeholder API.
+*   **Routing:** Utilizes React Router DOM for navigation between different sections (Home, Tasks, API Demo).
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
+## Screenshots
 
-## Files Included
+_(Add screenshots of your application here to showcase its features. For example:)
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
+### Light Mode
 
-## Requirements
+![Screenshot of Task Manager in Light Mode](placeholder_light_mode.png)
 
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
+### Dark Mode
 
-## Project Structure
+![Screenshot of Task Manager in Dark Mode](placeholder_dark_mode.png)
 
+## Deployed Application
+
+🚀 Live Demo: [Deployed GitHub Pages URL Here](YOUR_GITHUB_PAGES_URL)
+
+## Technologies Used
+
+*   React.js
+*   Vite.js
+*   Tailwind CSS (v4)
+*   React Router DOM
+*   (Add any other significant libraries or tools)
+
+## Setup Instructions
+
+Follow these steps to get your development environment set up and run the project locally:
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+*   Node.js (LTS version recommended)
+*   npm (comes with Node.js) or Yarn
+
+### Installation
+
+1.  **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/PLP-MERN-Stack-Development/react-js-jsx-and-css-mastering-front-end-development-Tornado-techie.git
+    cd react-js-jsx-and-css-mastering-front-end-development-Tornado-techie
+    ```
+
+2.  **Install dependencies:**
+
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+### Running the Development Server
+
+To start the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
 ```
-src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
+
+This will usually open the application in your browser at `http://localhost:5173/` (or another port if 5173 is in use).
+
+### Building for Production
+
+To create a production-ready build:
+
+```bash
+npm run build
+# or
+yarn build
 ```
 
-## Submission
+This will generate optimized static assets in the `dist` directory.
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+### Deployment to GitHub Pages
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
+To deploy your application to GitHub Pages, you can use the `deploy` script:
 
-## Resources
+```bash
+npm run deploy
+# or
+yarn deploy
+```
 
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+Ensure your `package.json` has the `homepage` field correctly configured for GitHub Pages, and `gh-pages` is installed as a dev dependency.
