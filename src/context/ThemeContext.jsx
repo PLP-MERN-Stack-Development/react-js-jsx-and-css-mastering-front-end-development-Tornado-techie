@@ -16,16 +16,15 @@ export const ThemeProvider = ({ children }) => {
   });
 
   useEffect(() => {
-    // Apply theme to body directly
     const body = document.body;
     
     if (isDarkMode) {
-      body.style.backgroundColor = '#1f2937'; // dark gray
-      body.style.color = '#f9fafb'; // light text
+      body.style.backgroundColor = '#111827'; // darker background for better contrast
+      body.style.color = '#f3f4f6'; // lighter text
       localStorage.setItem('theme', 'dark');
     } else {
-      body.style.backgroundColor = '#ffffff'; // white
-      body.style.color = '#000000'; // black text
+      body.style.backgroundColor = '#ffffff';
+      body.style.color = '#1f2937'; // darker text for light mode
       localStorage.setItem('theme', 'light');
     }
   }, [isDarkMode]);
