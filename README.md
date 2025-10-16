@@ -28,6 +28,9 @@ _Screenshots of my application to showcase its features.
 ### Search effect in API page
 ![Screenshot of Task Manager showing search effects in API page](screenshots/search-effect-api.png)
 
+### Task examples in task page
+![Screenshot of Task Manager showing all, active and completed tasks](screenshots/tasks-lightmode.png)
+
 
 ## Deployed Application
 
